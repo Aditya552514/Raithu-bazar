@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="flex">
+  <div class="w-64 h-screen overflow-hidden">
+    <div class="flex flex-col justify-between h-full px-5 py-8">
+      <div class="mx-auto">
+        <div class="text-3xl mb-3 text-center" style="font-family: 'Itim', 'cursive'">Digital Rythu Bazar</div>
+        <div>
+          <div class="border p-1.5 rounded-full w-fit mx-auto">
+            <div class="h-16 w-16 rounded-full overflow-hidden relative">
+              <img src="{% static 'images/logo.jpg'%}"/>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl" style="font-family: 'sans-serif', 'cursive'">Master</h3>
+            <div class="text-gray-600 text-sm">Pride for India</div>
+            <div class="flex items-center justify-center gap-1">
+              <i class="ri-heart-fill text-red-500"></i>
+              <div class="text-gray-700">255</div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-14">
+          <a href="/Home/" class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3">
+            <i class="ri-book-read-fill"></i> Home
+          </a>
+          <a href="#" class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3">
+            <i class="ri-book-read-fill"></i>About
+          </a>
+          <a href="/recipes/" class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3">
+            <i class="ri-book-read-fill"></i> Items
+          </a>
+          <a href="/dietplan/" class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3">
+            <i class="ri-global-fill"></i>Diet plan
+          </a>
+          <a href="/my order/" class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3">
+            <i class="ri-global-fill"></i>My order
+          </a>
+        </div>
+      </div>
+      <div class="text-center text-gray-700 bg-red-100 p-2 rounded-md">
+        <i class="ri-star-fill text-3xl text-yellow-500"></i>
+        <div>Buy premium for advanced
+          <a class="underline cursor-pointer">Features</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-red-50 w-full h-screen overflow-y-scroll p-8">
+    <div class="flex justify-between items-ceter">
+
+      <div
+        class="bg-red-500 px-10 py-2 rounded-md text-white cursor-pointer mb-3">Go to premium
+      </div>
+    </div>
+<h1 style="color: red;"; text-align: center;">SPECIALITY OF MY APP</h1>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button class="active bg-dark" data-bs-target="#demo" data-bs-slide-to="0"></button>
+        <button data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button data-bs-target="#demo" data-bs-slide-to="4"></button>
+        <button data-bs-target="#demo" data-bs-slide-to="5"></button>
+        <button data-bs-target="#demo" data-bs-slide-to="6"></button>
+    </div>
+    <marquee behavior="" direction="left">
+    <div class="carousel-inner mb-3">
+        <div class="carousel-item active">
+            <img src="{% static 'images/apple.jpeg'%}" class="img img-fluid d-block" alt="">
+        </div>
+        <div class="carousel-item">
+             <img src="{% static 'images/mango.jpeg'%}" class="img image-fluid d-block " alt="">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/drumstick.jpeg'%}" class="img img-fluid d-block centered-image" alt="placeholder image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/ladys.jpeg'%}" class="img img-fluid d-block centered-image" alt="placeholder image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/g1.jpg'%}" class="img img-fluid d-block centered-image" alt="placeholder image">
+        </div>
+</marquee>
+
+   <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark"></span>
+   </button>
+   <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+     <span class="carousel-control-next-icon bg-dark"></span>
+   </button>
+</div>
+<p> <pre style="font-style: italic; font-family: sans-serif;">
+  Here's a sample "About Us" page for Digital Rythu Bazar:
+
+Welcome to Digital Rythu Bazar
+
+Digital Rythu Bazar is an innovative online platform that aims to revolutionize the way farmers and consumers connect. Our mission is to create a transparent, efficient, and sustainable agricultural marketplace that benefits all stakeholders.
+
+Our Story
+
+We were founded by a team of passionate individuals who recognized the challenges faced by farmers and consumers in the traditional agricultural supply chain. We saw an opportunity to leverage technology to bridge the gap between farmers and consumers, ensuring that fresh produce reaches the market quickly and efficiently.
+
+Our Vision
+
+Our vision is to become the leading digital marketplace for agricultural products in India, empowering farmers to reach a wider market and consumers to access fresh, high-quality produce at competitive prices.
+
+Our Values
+
+- Transparency: We believe in complete transparency in all our transactions, ensuring that farmers and consumers have a clear understanding of the market dynamics.
+- Sustainability: We strive to promote sustainable agricultural practices, reducing waste and environmental impact.
+- Efficiency: We aim to streamline the supply chain, reducing costs and ensuring that produce reaches the market quickly.
+- Quality: We are committed to ensuring that only high-quality produce is sold on our platform.
+
+Our Team
+
+Our team consists of experienced professionals from the agriculture, technology, and logistics sectors. We are passionate about creating a positive impact on the agricultural ecosystem and are dedicated to making Digital Rythu Bazar a success.
+
+Join Us
+
+If you share our vision and values, we invite you to join us on this exciting journey. Whether you are a farmer, consumer, or partner, we look forward to working together to create a better future for Indian agriculture.
+</pre></p>
+  
+{% endblock %}
